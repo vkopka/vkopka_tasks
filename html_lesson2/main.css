@@ -1,0 +1,21 @@
+ul {
+    background: #8da5a8;
+    color: #1f0817;
+}
+.stl1 {
+    background: #7ca5bb;
+}
+.stl2 {
+    background: #a6bfc2;
+}
+.stl3 {
+    color: #160d42
+}
+img {
+    height:230px;
+    width:260px;
+}
+a:hover {
+    background: #3f269d;
+    color: aliceblue;
+}
