@@ -14,8 +14,12 @@
         body {
             margin: 0;
         }
-        .clspage {
+
+        .page_class {
+            border: 10px solid #625e75;
+            padding: 10px;
             box-sizing: border-box;
+            /*border-radius: 20px;*/
         }
     </style>
     <!--  Ссылка на файл стилей -->
@@ -23,20 +27,26 @@
 </head>
 <!-- Ниже блок тела кода -->
 <body class="stl1">
-<div class="clspage">
-    <p id="TopPg" class="stl3"><u> <a href="#BottomPg"> [Вниз] </a> </u></p>
+<div id="TopPg" class="page_class">
+    <p class="stl3"><u> <a href="#BottomPg"> [Вниз] </a> </u></p>
     <h1 class="stl2"> Программирование это мой мир </h1>
-    <img src="images/b.jpg" alt=" Здесь должен быть смайл Отлично! "/>
-    <p> Давным давно, когда деревья и трава были зеленее и пышнее, я прграммировал на таких языках:<br></p>
-    <ul>
-        <li>Basic</li>
-        <li>Fortran</li>
-        <li>(Turbo/Object) Pascal</li>
-        <li>Lisp</li>
-        <li>C(++)</li>
-        <li>Perl</li>
-        <li>SQL</li>
-    </ul>
+    <div class="bl_flex">
+        <div class="bl_left">
+            <img class="img1" src="images/b.jpg" alt=" Здесь должен быть смайл Отлично! "/>
+        </div>
+        <div class="ulp bl_left">
+            <p> Давным давно, когда деревья и трава были зеленее и пышнее, я прграммировал на таких языках:<br></p>
+            <ul>
+                <li>Basic</li>
+                <li>Fortran</li>
+                <li>(Turbo/Object) Pascal</li>
+                <li>Lisp</li>
+                <li>C(++)</li>
+                <li>Perl</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </div>
     <p> В современном мире большинство из этих языков утратили свою актуальность и почти не используются
         в ИТ индустрии.<br>
     </p>
@@ -46,9 +56,13 @@
     </p>
     <p>
         Проведено второе занятие, где мы изучили стили, идентификаторы, классы. <br><br>
-        Также немного затронили файлы стилей css.
+        Также немного затронили файлы стилей <strong>css</strong>.
     </p>
     <h2> Спасибо Вам! </h2>
+    <div class="bl_center bl_flex">
+        <img src="https://kidsvisitor.com/media/place_images/15/a2/15a2810575a9eaee4ed4eb8336fc79a9aac235c7.jpeg"
+             alt="Здесь должна быть картинка Okten Web University">
+    </div>
     <p id="BottomPg" class="stl3"><u> <a href="#TopPg"> [Вверх] </a> </u></p>
 </div>
 </body>
