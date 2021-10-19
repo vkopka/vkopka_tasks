@@ -1,3 +1,57 @@
+/* Обертка для страницы 6 */
+.page6_class {
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.border6 {
+    border: 5px solid white;
+    background: #6f659f;
+}
+
+.border6_1 {
+    border: 5px solid white;
+    background: #352d59;
+}
+
+/* Обертка для страницы 3 */
+.page3_class {
+    border: 5px solid darkcyan;
+    width: 800px;
+    height: 500px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.border3 {
+    border: 5px solid white;
+    background: darkcyan;
+}
+
+.top3_frame {
+    flex-grow: 1;
+    display: flex;
+}
+
+.bottom3_frame {
+    flex-grow: 2;
+    display: flex;
+}
+
+.bottom3_left {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom3_right {
+    flex-grow: 1;
+}
+
 /* Обертка для страницы 1 */
 .page_class {
     background: darkcyan;
