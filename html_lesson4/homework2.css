@@ -1,0 +1,52 @@
+/* Обертка для страницы 2 */
+.page_class_2 {
+    width: 900px;
+    height: 900px;
+}
+
+/* Рамка для заголовка */
+.frame_header {
+    background: #a57bd9;
+}
+
+/* Рамка окна навигации */
+.frame_nav {
+}
+
+/* Рамка середины контента */
+.frame_middle {
+    display: flex;
+    flex-grow: 10;
+}
+
+/* Рамка главного окна */
+.frame_main {
+    background: #35afab;
+    flex-grow: 3;
+}
+
+/* Рамка крайнего окна */
+.frame_aside {
+    background: #35af7c;
+}
+
+/* Рамка нижнего окна */
+.frame_footer {
+}
+
+.frame_nav, .frame_footer {
+    background: #6c35af;
+}
+
+.frame_header, .frame_footer {
+    flex-grow: 2;
+}
+
+.frame_nav, .frame_aside {
+    flex-grow: 1;
+}
+
+.frame_header:hover, .frame_footer:hover, .frame_main:hover, .frame_aside:hover, .frame_nav:hover {
+    background: #b71717;
+    color: #a6bfc2;
+}

@@ -1,0 +1,17 @@
+/* Урок 4 - Оптимизация */
+
+/* Список flex блоков */
+.block_center, .flex_vertical {
+    display: flex;
+}
+
+/* Горизонтальный flex блок с центрированием содержимого */
+.block_center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Вертикальный flex блок */
+.flex_vertical {
+    flex-direction: column;
+}

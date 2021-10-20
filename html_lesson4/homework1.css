@@ -1,0 +1,48 @@
+/* Урок 4 - Оптимизация */
+
+/* Обертка для страницы 1 */
+.page_class {
+    background: darkcyan;
+    width: 700px;
+    height: 500px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Параметры окна - бордюр */
+.frame_param {
+    border: 5px solid #ece8ef;
+}
+
+/* Верхняя рамка A */
+.frame_top {
+    background: #a57bd9;
+}
+
+/* Нижняя рамка */
+.frame_bottom {
+    display: flex;
+}
+
+/* Нижняя рамка B */
+.frame_bottom_b {
+    background: #7ca5bb;
+}
+
+/* Нижняя рамка C */
+.frame_bottom_c {
+    background: #6cab7e;
+}
+
+.frame_top, .frame_bottom_c {
+    flex-grow: 1;
+}
+
+.frame_bottom, .frame_bottom_b {
+    flex-grow: 2;
+}
+
+.frame_top:hover, .frame_bottom_b:hover, .frame_bottom_c:hover {
+    background: #b71717;
+    color: #a6bfc2;
+}
