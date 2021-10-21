@@ -1,0 +1,65 @@
+/* Урок 4 - Оптимизация - нет предела совершенству :) */
+:root {
+    /* размеры страницы */
+    --page_width: 650px;
+    --page_height: 900px;
+
+    /* Отступ между блоками */
+    --element_gap: 8px;
+
+    /* Цвета блоков */
+    --header_background: #6cab7e;
+    --menu_background: #a57bd9;
+    --post_background: #d6cde7;
+
+    /* Цвета выделенного блока */
+    --block_active_background: #b71717;
+    --block_active_color: #a6bfc2;
+}
+
+/* Обертка для страницы 2-1 */
+.page_class_2_1 {
+    width: var(--page_width);
+    height: var(--page_height);
+}
+
+/* Рамка окна заголовка */
+.frame_header_2_1 {
+    background: var(--header_background);
+}
+
+/* Рамка середины окна */
+.frame_middle_2_1 {
+    display: flex;
+    flex-grow: 4;
+    column-gap: var(--element_gap);
+}
+
+/* Рамка окна меню */
+.frame_middle_left_2_1 {
+    background: var(--menu_background);
+    flex-grow: 2;
+}
+
+/* Рамка для окон постинга */
+.frame_middle_right_2_1 {
+    flex-grow: 5;
+}
+
+/* Рамка окна постинга */
+.frame_post {
+    background: var(--post_background);
+}
+
+.frame_header_2_1, .frame_post {
+    flex-grow: 1;
+}
+
+.page_class_2_1, .frame_middle_right_2_1 {
+    row-gap: var(--element_gap);
+}
+
+.frame_post:hover, .frame_middle_left_2_1:hover, .frame_header_2_1:hover {
+    background: var(--block_active_background);
+    color: var(--block_active_color);
+}
