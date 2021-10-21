@@ -1,0 +1,62 @@
+/* Урок 4 - Оптимизация - нет предела совершенству :) */
+:root {
+    /* размеры страницы */
+    --page_margin: 20px;
+    --page_width: 600px;
+    --page_height: 900px;
+
+    /* Отступ между блоками */
+    --element_gap: 20px;
+
+    /* Цвета блоков */
+    --main_background: #84bbd3;
+    --array_background: blue;
+
+    /* Цвета выделенного блока */
+    --block_active_background: #b71717;
+    --block_active_color: #a6bfc2;
+}
+
+body {
+    margin: var(--page_margin);
+}
+
+/* Обертка для страницы 2_2 */
+.page_class_2_2 {
+    width: var(--page_width);
+    height: var(--page_height);
+    row-gap: var(--element_gap);
+}
+
+/* Рамка верхнего окна */
+.frame_up_widgets {
+}
+
+/* Рамка среднего окна */
+.frame_middle_widgets {
+    display: flex;
+    column-gap: var(--element_gap);
+}
+
+/* Рамка массива элементов среднего окна */
+.frame_array_widgets {
+    background: var(--array_background);
+}
+
+/* Рамка нижнего окна */
+.frame_bottom_contact {
+    flex-grow: 2;
+}
+
+.frame_up_widgets, .frame_bottom_contact {
+    background: var(--main_background);
+}
+
+.frame_up_widgets:hover, .frame_bottom_contact:hover, .frame_array_widgets:hover {
+    background: var(--block_active_background);
+    color: var(--block_active_color);
+}
+
+.frame_up_widgets, .frame_middle_widgets, .frame_array_widgets {
+    flex-grow: 1;
+}
