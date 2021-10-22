@@ -1,0 +1,116 @@
+:root {
+    /* размеры страницы */
+    --page_margin: 0;
+    --page_width: 385px;
+    --page_height: 290px;
+
+    /* Отступ между блоками */
+    --element_gap: 15px;
+
+    /* Цвета блоков */
+    --main_background: #ced8e1;
+    --array_background: #102b3c;
+    --border_color: #98bcca;
+
+    --font_size: 8px;
+}
+
+body {
+    margin: var(--page_margin);
+}
+
+/* Обертка для страницы 4_1 */
+.page_4_1 {
+    width: var(--page_width);
+    height: var(--page_height);
+    background: var(--main_background);
+}
+
+.frame_level_1, .frame_level_in, .frame_package,
+.frame_package1 {
+    flex-grow: 1;
+}
+
+.frame_level_1 {
+    display: flex;
+}
+
+.frame_level_1:nth-child(2) {
+    background: var(--array_background);
+}
+
+.frame_level_in {
+    margin: 4px 15px 10px;
+    border-color: var(--border_color);
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.frame_text, .frame_array_box, .frame_text_box {
+    width: 100%;
+}
+
+.frame_text {
+    flex-grow: 3;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: var(--font_size);
+    color: var(--array_background);
+}
+
+.frame_array_box {
+    display: flex;
+    flex-grow: 6;
+    box-sizing: border-box;
+    padding: 0 10px 10px;
+    column-gap: var(--element_gap);
+}
+
+.frame_level_1:nth-child(2) > .frame_array_box {
+    padding: 0 20px 10px;
+}
+
+.frame_package {
+    align-items: center;
+}
+
+.frame_is_box {
+    width: 70px;
+    height: 60px;
+    border-radius: 8px;
+    background: var(--array_background);
+}
+
+.frame_text_box {
+    padding: 5px 0 0;
+    text-align: center;
+    font-size: var(--font_size);
+    color: var(--array_background);
+}
+
+.frame_package1 {
+    margin-top: 10px;
+    padding: 10px 0 0;
+    align-items: center;
+}
+
+.frame_package1 > .frame_is_box {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--main_background);
+}
+
+.frame_package1 > .frame_text_box {
+    padding: 5px 0 0;
+    text-align: center;
+    font-size: var(--font_size);
+    color: var(--main_background);
+}
+
+.frame_package1:nth-child(2) {
+    border-color: var(--border_color);
+    border-style: solid;
+    border-radius: 5px;
+}
