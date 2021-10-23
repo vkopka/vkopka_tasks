@@ -1,0 +1,97 @@
+/* Код взят из урока 4 звдания homework2_2 */
+:root {
+    /* Lesson5 - media */
+
+    /* Отступ между блоками */
+    --element_gap: 5px;
+
+    /* Цвета блоков */
+    --main_background: #84bbd3;
+    --array_background: blue;
+
+    /* размеры страницы под iPad */
+    --page_margin: 0px;
+    --page_width: 768px;
+    --page_height: 1024px;
+    /*  для другого устройства параметры указаны ниже в блоке Media  */
+}
+
+body {
+    margin: var(--page_margin);
+}
+
+/* Обертка для страницы 2_2 */
+.page_class_2_2 {
+    width: var(--page_width);
+    height: var(--page_height);
+    row-gap: var(--element_gap);
+}
+
+/* Рамка верхнего окна */
+.frame_up_widgets {
+    width: 100%;
+    height: 300px;
+}
+
+/* Рамка среднего окна */
+.frame_middle_widgets {
+    display: flex;
+    column-gap: var(--element_gap);
+}
+
+/* Рамка массива элементов среднего окна */
+.frame_array_widgets {
+    background: var(--array_background);
+    justify-content: space-evenly;
+    max-height: 250px;
+    height: 33.3vw;
+}
+
+/* Рамка нижнего окна */
+.frame_bottom_contact {
+    flex-grow: 2;
+    height: 550px;
+    justify-content: space-evenly;
+}
+
+.frame_up_widgets, .frame_bottom_contact {
+    background: var(--main_background);
+}
+
+.frame_up_widgets, .frame_middle_widgets, .frame_array_widgets {
+    flex-grow: 1;
+}
+
+/* Media - блок, ниже описаны изменения интерфейса для другого рарешени экрана */
+@media screen and (max-width: 768px) {
+    .page_class_2_2 {
+        width: 100vw;
+    }
+}
+
+/* Media - блок, ниже описаны изменения интерфейса для другого рарешени экрана */
+@media screen and (max-width: 500px) {
+    .page_class_2_2 {
+        height: max-content;
+    }
+
+    .frame_up_widgets {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .frame_middle_widgets {
+        flex-direction: column;
+        row-gap: var(--element_gap);
+    }
+
+    .frame_array_widgets {
+        width: 100vw;
+        height: 100vw;
+        max-height: 100vw;
+    }
+
+    .frame_bottom_contact {
+        height: 100vw;
+    }
+}
