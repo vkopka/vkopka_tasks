@@ -1,0 +1,64 @@
+/* Example position: static */
+.wrapper {
+    width: 100%;
+    height: 120px;
+    background: darkcyan;
+    display: flex;
+    /* параметры для объектов внутри этого блока */
+    justify-content: space-evenly; /* Равномерное распределение по горизонтали */
+    align-items: center; /* центрирование по вертикали */
+
+    /*  fixed - Фиксированное позиционирование.  Это можно использовать для создания «плавающего» элемента,
+            который остаётся в том же положении независимо от прокрутки. */
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: #3f269d;
+
+    /* Позицирование: static это значение по умолчанию  */
+    /*position: static;*/
+
+    /* relative - относительное смещение */
+    /*position: relative;*/
+    /*left: 50px;*/
+    /*top: 50px;*/
+
+    /* absolute - элемент с абсолютным позиционированием, выбивается из потока; таким образом,
+                  другие элементы располагаются без учёта абсолютных. */
+    /*position: absolute;*/
+    /*top: 130px;*/
+    /*left: 130px;*/
+
+    /*  fixed - Фиксированное позиционирование.  Это можно использовать для создания «плавающего» элемента,
+                который остаётся в том же положении независимо от прокрутки. */
+    /*position: fixed;*/
+    /*top: 10px;*/
+    /*left: 50px;*/
+}
+
+.box:nth-child(2) {
+    background: #b71717;
+    /*left: 170px;*/
+}
+
+.box:nth-child(3) {
+    background: darkgreen;
+    /*left: 290px;*/
+}
+
+.text {
+    border-top: 5px solid white;
+    height: 200px;
+    background: #a6bfc2;
+    overflow: auto; /* включить скролинг */
+    text-align: justify; /* выровнять(рястянуть) текст по ширине */
+}
+
+.text + .text {
+    /*border-top: 5px solid white;*/
+}
