@@ -1,0 +1,100 @@
+/* заточено под iPhone X */
+@media screen and (max-width: 420px) {
+    .navigate__bar {
+        display: none;
+    }
+
+    .block__logo {
+        position: absolute;
+        left: 6%;
+        top: 3%;
+    }
+
+    .block__logo img {
+        width: 55%;
+        height: 55%;
+    }
+
+    .nav__btn_mobile {
+        display: flex;
+    }
+
+    .text__main_block {
+        display: none;
+    }
+
+    .text__main_block_mobile {
+        display: flex;
+    }
+
+    .text__welcome {
+        position: absolute;
+        top: 80%;
+        left: 5%;
+        font-size: 8.2vw;
+    }
+
+    .text__restaurant {
+        position: absolute;
+        top: 95%;
+        left: 5%;
+        font-size: 9.5vw;
+    }
+
+    .text__home {
+        position: absolute;
+        top: 115%;
+        left: 5%;
+        font-size: 5vw;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 130%;
+        left: 25%;
+    }
+
+    .intro__1 {
+        position: absolute;
+        width: 80%;
+        height: 35%;
+        left: 10%;
+        top: 90%;
+    }
+
+    .intro__image {
+        margin: 4vw 0 0 27vw;
+    }
+
+    .intro__text_1 {
+        margin-left: 0;
+        font-size: 7vw;
+        color: #2C2C2C;
+        text-align: center;
+    }
+
+    .intro__text_2 {
+        margin-left: 5%;
+        margin-top: 3%;
+        width: 90%;
+        font-size: 6vw;
+        color: #656363;
+        text-align: center;
+    }
+
+    .intro__2 {
+        position: absolute;
+        width: 80%;
+        height: 35%;
+        left: 10%;
+        top: 130%;
+    }
+
+    .intro__3 {
+        position: absolute;
+        width: 80%;
+        height: 35%;
+        left: 10%;
+        top: 170%;
+    }
+}
