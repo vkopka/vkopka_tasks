@@ -1,3 +1,5 @@
+/* Оптимизировано под мое разрешение экрана 1920х1080 */
+/* Но по идее должно масштабироваться и на меньшее */
 .header {
     height: 100vh;
     background: url("../images/bimage.png") no-repeat center/cover;
@@ -156,4 +158,64 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.intro__1 {
+    position: absolute;
+    width: 18%;
+    height: 35%;
+    left: 16%;
+    top: 90%;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 40px 20px rgba(0, 0, 0, 0.2);
+}
+
+.intro__2 {
+    position: absolute;
+    width: 18%;
+    height: 35%;
+    left: 40%;
+    top: 90%;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 40px 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro__3 {
+    position: absolute;
+    width: 18%;
+    height: 35%;
+    left: 64%;
+    top: 90%;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 40px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header__2 {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.intro__image {
+    margin: 1vw 0 0 6.5vw;
+}
+
+.intro__text_1 {
+    margin-left: 0;
+    font-size: 1.3vw;
+    color: #2C2C2C;
+    text-align: center;
+}
+
+.intro__text_1 span {
+    color: #D67E35;
+}
+
+.intro__text_2 {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+    font-size: 1.3vw;
+    color: #656363;
+    text-align: center;
 }
